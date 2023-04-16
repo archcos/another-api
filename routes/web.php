@@ -25,3 +25,7 @@ Route::delete('/users/{id}','UserController@delete');
 Route::put('/users/{id}','UserController@update');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
